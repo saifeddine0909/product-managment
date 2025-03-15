@@ -18,7 +18,7 @@ export class ProductFormComponent {
     this.productService.createProduct(this.product).subscribe(response => {
       this.productAdded.emit(response);
       this.product = {} as Product;
-      alert("Ajouté avec succès");
+      alert("Added successfully");
     });
   }
 }
